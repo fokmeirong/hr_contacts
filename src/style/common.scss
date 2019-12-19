@@ -4,7 +4,13 @@
 @import './common/font.scss';
 
 html {
-    // font-size: 62.5%;
-    // font-size: pxTorem(12px);
-    font-size: calc(16rem / 375);
+    font-size: 100vw;
 }
+
+header {
+    font-size: calcRem(20);
+    background: $header-bg;
+}
+
+
+
