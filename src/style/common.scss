@@ -1,0 +1,10 @@
+@import './common/reset';
+@import './common/variables';
+@import './common/function';
+@import './common/font.scss';
+
+html {
+    // font-size: 62.5%;
+    // font-size: pxTorem(12px);
+    font-size: calc(16rem / 375);
+}
