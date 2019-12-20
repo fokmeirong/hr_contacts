@@ -13,12 +13,3 @@ body {
     font-size: rem(16);
     color: #5D5D5D;
 }
-
-
-/*
-import component styles
-*/
-@import './components/Header.scss';
-@import './components/SearchBar.scss';
-@import './components/ContactList.scss';
-

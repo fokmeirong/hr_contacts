@@ -1,0 +1,86 @@
+.user-tab {
+    padding: rem(15) rem(25);
+    box-shadow: 0px 3px 6px #00000029;
+
+    .profile {
+        display: flex;
+        align-items: center;
+
+        .photo {
+            width: rem(98);
+            height: rem(98);
+        }
+
+        .right-panel {
+            flex: 1;
+
+            .name {
+                font-size: rem(26);
+                line-height: rem(35);
+                display: flex;
+                font-weight: bold;
+                
+                &.new-user {
+                    &:after {
+                        content: 'new';
+                        align-self: center;
+                        margin-left: rem(10);
+                        background: #B152D5;
+                        color: $color-white;
+                        font-size: rem(10);
+                        line-height: rem(13);
+                        width: rem(45);
+                        height: rem(20);
+                        text-align: center;
+                        border-radius: rem(10);
+                        line-height: rem(20);
+                    }
+                }
+            }
+
+            .status {
+                width: rem(61);
+                height: rem(20);
+                font-size: rem(10);
+                line-height: rem(19);
+                border: 2px #FDD15B solid;
+                border-radius: rem(10);
+                text-align: center;
+            }
+        }
+
+
+    }
+
+    .user-operation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: rem(40);
+        padding-left: rem(38-25);
+        padding-right: rem(38-25);
+
+
+        .icon {
+            &:nth-child(1), &:nth-child(3)  {
+                width: rem(27);
+                height: rem(27);
+            }
+
+            &:nth-child(2) {
+                width: rem(30);
+                height: rem(30);
+            }
+
+            &:nth-child(4) {
+                width: rem(30);
+                height: rem(27);
+            }
+
+            &:nth-child(5) {
+                width: rem(24);
+                height: rem(27);
+            }
+        }
+    }
+}

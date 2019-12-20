@@ -1,0 +1,27 @@
+.contact-detail {
+    .detail-tab {
+        p {
+            display: flex;
+            font-size: rem(16);
+            line-height: rem(21);
+
+            &:first-child {
+                margin-bottom: rem(10);
+            }
+
+            .title {
+                width: rem(65);
+                font-weight: 300;
+            }
+
+            .content {
+                flex: 1;
+                color: #9B9B9B;
+            }
+        }
+    }
+}
+
+.activity-log {
+    margin-top: rem(20);
+}

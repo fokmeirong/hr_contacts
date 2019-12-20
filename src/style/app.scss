@@ -1,1 +1,10 @@
 @import './common.scss';
+
+/*
+import component styles
+*/
+@import './components/Header.scss';
+@import './components/SearchBar.scss';
+@import './components/ContactList.scss';
+@import './components/UserTab.scss';
+@import './components/ContactDetail.scss';
