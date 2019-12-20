@@ -1,0 +1,29 @@
+.search-bar {
+    background: #6F50FF;
+    font-family: 'Arial';
+    padding: rem(12);
+    height: rem($search-bar-height);
+
+    input {
+        width: 100%;
+        height: rem(36);
+        border-radius: rem(10);
+        outline-style: none;
+        border: 0;
+        border: 1px solid #AAAAAA;
+        padding: rem(12);
+
+        &:focus{
+            outline: 0;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+        }
+    }
+
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+        color: #AAAAAA;
+        font-size: rem(15);
+        text-align: center;
+    }
+
+}

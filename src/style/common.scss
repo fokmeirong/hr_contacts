@@ -1,16 +1,24 @@
 @import './common/reset';
 @import './common/variables';
 @import './common/function';
-@import './common/font.scss';
+@import './common/font';
 
 html {
     font-size: 100vw;
+    position: relative;
 }
 
-header {
-    font-size: calcRem(20);
-    background: $header-bg;
+body {
+    font-family: "Futura Medium";
+    font-size: rem(16);
+    color: #5D5D5D;
 }
 
 
+/*
+import component styles
+*/
+@import './components/Header.scss';
+@import './components/SearchBar.scss';
+@import './components/ContactList.scss';
 

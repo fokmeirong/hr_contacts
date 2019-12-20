@@ -1,0 +1,81 @@
+.contact-list {
+    position: absolute;
+    top: rem($header-height + $search-bar-height);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: scroll;
+
+    ul {
+        list-style-type: none;
+        list-style: none;
+
+        li {
+            padding: rem(24);
+            border-bottom: #00000029 1px solid;
+            display: flex;
+
+            .left-panel {
+                flex: 1;
+                align-items: center;
+
+                .name {
+                    font-size: rem(20);
+                    line-height: rem(27);
+                    display: flex;
+
+                    &.new-user {
+                        &:after {
+                            content: 'new';
+                            align-self: center;
+                            margin-left: rem(10);
+                            background: #B152D5;
+                            color: $color-white;
+                            font-size: rem(10);
+                            line-height: rem(13);
+                            width: rem(45);
+                            height: rem(20);
+                            text-align: center;
+                            border-radius: rem(10);
+                            line-height: rem(20);
+                        }
+                    }
+                }
+
+                .email {
+                    font-size: rem(16);
+                    line-height: rem(21);
+                    color: #9B9B9B;
+                }
+            }
+
+            .right-panel {
+                width: rem(80);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                span {
+                    flex: 1;
+                    display: block;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .phone {
+                    width: rem(30.42);
+                    height: rem(30.42);
+                }
+
+                .email {
+                    width: rem(40);
+                    height: rem(35);
+                    margin-left: rem(15);
+                }
+            }
+        }
+    }
+}

@@ -1,14 +1,20 @@
 import React from 'react';
-import { Button } from 'antd-mobile';
+import './home.scss';
+import Header from '@/components/Header';
+import SearchBarInput from '@/components/SearchBar';
+import ContactList from '@/components/ContactList';
+
+const AddPersonTag = () => <span className="menu-add-person"></span>;
+const Menu = () => <span className="menu-list"></span>;
 
 class Home extends React.Component {
     render() {
+
         return (
             <div className='home-page'>
-                <header>
-                    John Chan
-                    <Button type="primary">primary</Button>
-                </header>
+                <Header left={<Menu/>} right={<AddPersonTag/>}>CONTACTS</Header>
+                <SearchBarInput/>
+                <ContactList/>
             </div>
         );
     }
