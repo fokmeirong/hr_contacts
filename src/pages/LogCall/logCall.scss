@@ -1,0 +1,61 @@
+@import './../../style/common.scss';
+
+.log-call-page {
+    .content-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+            width: rem(28);
+            height: rem(28);
+            background: url('./../../static/images/phone.svg') no-repeat center center;
+            background-size: 100% 100%;
+            margin-right: rem(8);
+        }
+
+        .txt {
+            font-size: rem(24);
+            line-height: rem(32);
+            color: #7048FF;
+        }
+    }
+
+    .pre {
+        margin-top: rem(15);
+
+        .right {
+            font-size: rem(10);
+            line-height: rem(13);
+            color: #918E8E;
+        }
+    }
+
+    .edit-area {
+        textarea {
+            width: 100%;
+            height: rem(260);
+            font-size: rem(20);
+            line-height: rem(27);
+            color: #626262;
+            font-weight: 600;
+        }
+
+        .btn-log {
+            display: block;
+            width: rem(95);
+            height: rem(35);
+            background:#CECECE 0% 0% no-repeat padding-box;
+            border-radius: rem(35/2);
+            margin: 0 auto;
+            font-size: rem(16);
+            line-height: rem(21);
+            color: $color-white;
+            box-shadow: 0px 3px 6px #00000029;
+
+            &.active {
+                background:#63D21F 0% 0% no-repeat padding-box;
+            }
+        }
+    }
+}

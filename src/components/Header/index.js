@@ -1,10 +1,5 @@
 import React from 'react';
-
-const GoBack = () => {
-    return (
-        <span className="go-back"></span>
-    );
-}
+import GoBack from '@/components/GoBackArrow';
 
 const Header = (props) => {
     return (

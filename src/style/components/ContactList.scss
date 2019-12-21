@@ -11,9 +11,11 @@
         list-style: none;
 
         li {
-            padding: rem(24);
-            border-bottom: #00000029 1px solid;
-            display: flex;
+            a {
+                display: flex; 
+                padding: rem(24);
+                border-bottom: #00000029 1px solid;
+            }
 
             .left-panel {
                 flex: 1;

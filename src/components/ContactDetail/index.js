@@ -6,7 +6,7 @@ class ContactDetail extends React.Component {
             <div className="contact-detail">
                 <p className="pre">
                     <label className="text">Contact Detail</label>
-                    <label className="edit">Edit</label>
+                    <label className="right">Edit</label>
                 </p>
                 <div className="content-tab detail-tab">
                     <p>
