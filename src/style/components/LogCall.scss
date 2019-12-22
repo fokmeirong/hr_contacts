@@ -1,6 +1,9 @@
-@import './../../style/common.scss';
-
 .log-call-page {
+    .edit-area {
+        padding: 0;
+        padding-bottom: rem(20)
+    }
+
     .content-head {
         display: flex;
         justify-content: center;
@@ -39,6 +42,7 @@
             line-height: rem(27);
             color: #626262;
             font-weight: 600;
+            padding: rem(20)
         }
 
         .btn-log {

@@ -1,11 +1,16 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { connect } from "react-redux";
 import constant from './../../utils/const';
+import action from "./../../redux/user/action";
 
-// class UserTab extends React.Component {
+
 function UserTab(props) {
     const user = props.user;
     const userStatus = constant.status[user.status];
+
+    function showLogCall() {
+        props.dispatch(action.toggleLogCall(true));
+    }
 
     return (
         <div className="user-tab">
@@ -17,9 +22,7 @@ function UserTab(props) {
                 </div>
             </div>
             <div className="user-operation">
-                <NavLink to={`/log-call/${user.id}`}>
-                    <img src={require('@images/phone.svg')} className="icon" alt="" />
-                </NavLink>
+                <img src={require('@images/phone.svg')} className="icon" alt=""  onClick={showLogCall}/>
                 <img src={require('@images/mail.svg')} className="icon" alt="email" />
                 <img src={require('@images/message.svg')} className="icon" alt="message" />
                 <img src={require('@images/canlendar.svg')} className="icon" alt="canlendar" />
@@ -29,4 +32,4 @@ function UserTab(props) {
     )
 }
 
-export default UserTab;
+export default connect()(UserTab);

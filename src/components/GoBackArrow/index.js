@@ -4,6 +4,7 @@ import React from 'react';
 class GoBackArrow extends React.Component {
     constructor (props) {
         super(props);
+
         this.state = {
             history: require("history").createHashHistory,
         };
@@ -11,7 +12,7 @@ class GoBackArrow extends React.Component {
     }
 
     goBack() {
-        this.state.history().goBack();
+        typeof this.props.goBackEvent === 'function' ? this.props.goBackEvent() : this.state.history().goBack();
     }
 
     render() {

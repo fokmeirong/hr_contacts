@@ -8,3 +8,4 @@ Mock.setup({
 
 Mock.mock('/api/getList', 'get', api.getList);
 Mock.mock('/api/getDetail', 'get', api.getDetail);
+Mock.mock('/api/addLog', 'post', api.pushLog);

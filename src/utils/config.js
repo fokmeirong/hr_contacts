@@ -1,8 +1,9 @@
 const config = {
     api: {
-        // getContactList: 'http://www.mocky.io/v2/5dfe6f16310000ed1ac96f64',
         getContactList: '/api/getList',
-        getCandidateDetail: '/api/getDetail'
+        getCandidateDetail: '/api/getDetail',
+        addLog: '/api/addLog'
+
     },
     status: {
         1: 'Open',

@@ -6,7 +6,7 @@ const Header = (props) => {
         <header>
             <div className="left">
                 {
-                    props.left || <GoBack/>
+                    props.left || <GoBack goBackEvent={props.goBackEvent}/>
                 }
             </div>
             <div className="title">{props.children}</div>

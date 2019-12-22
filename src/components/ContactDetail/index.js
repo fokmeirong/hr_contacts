@@ -1,13 +1,20 @@
 import React from 'react';
+import { connect } from "react-redux";
+import action from "./../../redux/user/action";
 
 // class ContactDetail extends React.Component {
 function ContactDetail(props) {
     const user = props.user;
+
+    function showLogCall() {
+        props.dispatch(action.toggleLogCall(true));
+    }
+
     return (
         <div className="contact-detail">
             <p className="pre">
                 <label className="text">Contact Detail</label>
-                <label className="right">Edit</label>
+                <label className="right" onClick={showLogCall}>Edit</label>
             </p>
             <div className="content-tab detail-tab">
                 <p>
@@ -23,4 +30,4 @@ function ContactDetail(props) {
     )
 }
 
-export default ContactDetail;
+export default connect()(ContactDetail);

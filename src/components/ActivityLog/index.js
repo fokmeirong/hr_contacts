@@ -1,7 +1,7 @@
 import React from 'react';
 import constant from './../../utils/const';
+import moment from 'moment'; 
 
-// class ActivityLog extends React.Component {
 function ActivityLog(props) {
     const user = props.user;
     const logs = user && user.log;
@@ -22,13 +22,14 @@ function ActivityLog(props) {
                         {
                             logs && logs.map((log, index) => {
                                 const logType = constant.logType[log.type];
+                                const logTime = moment(log.log_time).format('MM/DD/YYYY hh:mm:ss a');
 
                                 return (
                                     <li key={index}>
                                         <i className={`node-icon ${logType && logType.class}`}></i>
                                         <div>
                                             <span className="txt">{logType && logType.text}</span>
-                                            <span className="time">{log.log_time}</span>
+                                            <span className="time">{logTime}</span>
                                             <span className="note">{log.note}</span>
                                         </div>
                                     </li>
@@ -36,39 +37,6 @@ function ActivityLog(props) {
                                 
                             })
                         }
-                        {/* <li>
-                            <i className="node-icon hired"></i>
-                            <div>
-                                <span className="txt">New contact created</span>
-                                <span className="time">2016-03-10 18:07:15</span>
-                                <span className="note">A quick win!</span>
-                            </div>
-                        </li>
-                        <li>
-                            <i className="node-icon call"></i>
-                            <div>
-                                <span className="txt">New contact created</span>
-                                <span className="time">2016-03-10 18:07:15</span>
-                                <span className="note">A quick win!</span>
-                            </div>
-                        </li>
-                        <li>
-                            <i className="node-icon new-contact"></i>
-                            <div>   
-                                <span className="txt">New contact created</span>
-                                <span className="time">2016-03-10 18:07:15</span>
-                                <span className="note">A quick win!</span>
-                            </div>
-                        </li>
-                        <li>
-                            <i className="node-icon fill-form"></i>
-                            <div>
-                                <span className="txt">New contact created</span>
-                                <span className="time">2016-03-10 18:07:15</span>
-                                <span className="note">A quick win!</span>
-                            </div>
-
-                        </li> */}
                     </ul>
                 </div>
 
