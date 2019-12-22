@@ -36,3 +36,33 @@ body {
     background: $color-white;
     box-shadow: 0px 3px 6px #00000029;
 }
+
+.animate-route{
+
+  animation-duration: 1s;
+
+  animation-fill-mode: both;
+
+  animation-name: fadeRoute;
+
+}
+
+
+
+@keyframes fadeRoute {
+
+  from {
+
+    opacity: 0;
+
+  }
+
+
+
+  to {
+
+    opacity: 1;
+
+  }
+
+}

@@ -12,8 +12,8 @@ const Routes = () => {
             <HashRouter>
                 <Switch>
                     <Route exact path="/" component={Home} />
-                    <Route exact path="/detail" component={Details} />
-                    <Route exact path="/log-call" component={LogCall} />
+                    <Route exact path="/detail/:id" component={Details} />
+                    <Route exact path="/log-call/:id" component={LogCall} />
                     <Route component={NotFound} />
                 </Switch>
             </HashRouter>
