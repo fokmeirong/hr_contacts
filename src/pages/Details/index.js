@@ -64,7 +64,7 @@ class Details extends React.Component {
                 {
                     !this.props.showLogCall ? (
                         <div className="detail-area">
-                            <UserTab user={this.state.user}></UserTab>
+                            <UserTab user={this.state.user} onRefresh={this.onRefresh} />
                             <ContactDetail user={this.state.user} />
                             <ActivityLog user={this.state.user} />
                         </div>

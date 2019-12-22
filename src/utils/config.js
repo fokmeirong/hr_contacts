@@ -2,7 +2,8 @@ const config = {
     api: {
         getContactList: '/api/getList',
         getCandidateDetail: '/api/getDetail',
-        addLog: '/api/addLog'
+        addLog: '/api/addLog',
+        markAsHired: '/api/markAsHired'
 
     },
     status: {

@@ -28,7 +28,7 @@ function SearchBarInput () {
                         <li key={item.id}>
                             <NavLink to={`/detail/${item.id}`}>
                                 <div className="left-panel">
-                                    <p className={`name ${item.isNew ? 'new-user' : ''} `}>{item.name}</p>
+                                    <p className={`name ${item.log.length <= 2 ? 'new-user' : ''} `}>{item.name}</p>
                                     <p className="email">{item.email}</p>
                                 </div>
                                 <div className="right-panel">

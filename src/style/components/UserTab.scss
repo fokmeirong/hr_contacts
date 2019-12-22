@@ -95,3 +95,18 @@
         }
     }
 }
+
+.am-action-sheet-button-list {
+    color: #007AFF;
+}
+
+.am-action-sheet-button-list-item {
+    height: auto;
+    font-size: rem(20);
+    line-height: rem(24);
+    padding: rem(20)
+}
+
+.am-action-sheet-button-list .am-action-sheet-cancel-button {
+    padding: rem(20);
+}

@@ -89,7 +89,7 @@ class LogCall extends React.Component {
                 </div>
                 <p className="pre">
                     <label className="text">Call Detail</label>
-                    <label className="right">12/12/2019 10:50:30am</label>
+                    <label className="right">{moment().format('YYYY-MM-DD HH:mm:ss')}</label>
                 </p>
 
                 <div className="content-tab edit-area">

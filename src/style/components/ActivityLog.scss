@@ -30,7 +30,7 @@
         display: flex;
         padding-bottom: rem(10);
         
-        border-left: 2px solid #7D50FF;
+        border-left: rem(2) solid #7D50FF;
 
         &:last-child {
             border: 0;
@@ -87,7 +87,7 @@
 
             &.call {
                 @include icon(30);
-                border: 2px #707070 solid;
+                border: rem(2) #707070 solid;
                 border-radius: rem(15);
                 display: flex;
                 justify-content: center;
